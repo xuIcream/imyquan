@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <RelativeLayout 
+           android:layout_width="match_parent"
+           android:layout_height="45dip"
+           android:background="@android:color/background_dark"
+        >
+        
+        <Button android:id="@+id/finishbt"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/finish"/>
+        
+        <Button android:id="@+id/detailbt"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           	android:text="@string/detail"/>
+        
+    </RelativeLayout>
+    
+    <ListView
+        android:layout_weight="1" 
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:id="@+id/list"
+        >
+    </ListView>
+    
+    <RelativeLayout 
+           android:layout_width="match_parent"
+           android:layout_height="45dip"
+           android:layout_gravity="bottom"
+           android:background="@android:color/background_light"
+        >
+        
+        <Button android:id="@+id/choose_all"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chooseAll"/>
+        
+        <TextView android:id="@+id/choose_count"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+    </RelativeLayout>
+    
+</LinearLayout>
